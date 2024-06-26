@@ -89,7 +89,7 @@ const Group = <
       >
         {label}
       </Heading>
-      <div>{children}</div>
+      {children}
     </div>
   );
 };
