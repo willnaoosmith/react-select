@@ -25,7 +25,7 @@
     "moment": "^2.29.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-select": "^5.5.9",
+    "react-select": "^5.7.0",
     "remeda": "^1.1.0",
     "webpack": "^4.30.0"
   },
