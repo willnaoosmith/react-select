@@ -65,34 +65,34 @@
   },
   "exports": {
     ".": {
-      "module": "./dist/react-select.esm.js",
-      "import": "./dist/react-select.cjs.mjs",
-      "default": "./dist/react-select.cjs.js"
+      "module": "./dist/willnaoosmith-react-select.esm.js",
+      "import": "./dist/willnaoosmith-react-select.cjs.mjs",
+      "default": "./dist/willnaoosmith-react-select.cjs.js"
     },
     "./base": {
-      "module": "./base/dist/react-select-base.esm.js",
-      "import": "./base/dist/react-select-base.cjs.mjs",
-      "default": "./base/dist/react-select-base.cjs.js"
+      "module": "./base/dist/willnaoosmith-react-select-base.esm.js",
+      "import": "./base/dist/willnaoosmith-react-select-base.cjs.mjs",
+      "default": "./base/dist/willnaoosmith-react-select-base.cjs.js"
     },
     "./async": {
-      "module": "./async/dist/react-select-async.esm.js",
-      "import": "./async/dist/react-select-async.cjs.mjs",
-      "default": "./async/dist/react-select-async.cjs.js"
+      "module": "./async/dist/willnaoosmith-react-select-async.esm.js",
+      "import": "./async/dist/willnaoosmith-react-select-async.cjs.mjs",
+      "default": "./async/dist/willnaoosmith-react-select-async.cjs.js"
     },
     "./animated": {
-      "module": "./animated/dist/react-select-animated.esm.js",
-      "import": "./animated/dist/react-select-animated.cjs.mjs",
-      "default": "./animated/dist/react-select-animated.cjs.js"
+      "module": "./animated/dist/willnaoosmith-react-select-animated.esm.js",
+      "import": "./animated/dist/willnaoosmith-react-select-animated.cjs.mjs",
+      "default": "./animated/dist/willnaoosmith-react-select-animated.cjs.js"
     },
     "./creatable": {
-      "module": "./creatable/dist/react-select-creatable.esm.js",
-      "import": "./creatable/dist/react-select-creatable.cjs.mjs",
-      "default": "./creatable/dist/react-select-creatable.cjs.js"
+      "module": "./creatable/dist/willnaoosmith-react-select-creatable.esm.js",
+      "import": "./creatable/dist/willnaoosmith-react-select-creatable.cjs.mjs",
+      "default": "./creatable/dist/willnaoosmith-react-select-creatable.cjs.js"
     },
     "./async-creatable": {
-      "module": "./async-creatable/dist/react-select-async-creatable.esm.js",
-      "import": "./async-creatable/dist/react-select-async-creatable.cjs.mjs",
-      "default": "./async-creatable/dist/react-select-async-creatable.cjs.js"
+      "module": "./async-creatable/dist/willnaoosmith-react-select-async-creatable.esm.js",
+      "import": "./async-creatable/dist/willnaoosmith-react-select-async-creatable.cjs.mjs",
+      "default": "./async-creatable/dist/willnaoosmith-react-select-async-creatable.cjs.js"
     },
     "./package.json": "./package.json"
   }
