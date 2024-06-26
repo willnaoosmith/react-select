@@ -3,38 +3,35 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 
-permissions:
-  contents: read
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+  NPM_TOKEN: ${{ secrets.GIT_TOKEN }}  
 
 jobs:
   release:
-    permissions:
-      # for changesets/action
-      contents: write
-      pull-requests: write
     name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-        with:
-          # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
-          fetch-depth: 0
 
-      - name: Setup Node.js 16.x
+      - name: Setup Node.js 18.x
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
+          cache: 'npm'
+          token: ${{ secrets.GIT_TOKEN }}
+          registry-url: 'https://npm.pkg.github.com'
 
       - name: Install Dependencies
-        run: yarn
+        run: npm ci
 
       - name: Create Release Pull Request or Publish to npm
+        id: changesets
         uses: changesets/action@v1
         with:
-          publish: yarn release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          publish: npm run release
